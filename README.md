@@ -1,72 +1,77 @@
-# tria
+# tria ⏳
 
-**três tarefas. um tempo.**
+![GitHub top language](https://img.shields.io/github/languages/top/jontsm0/tria?style=for-the-badge)
+![GitHub repo size](https://img.shields.io/github/repo-size/jontsm0/tria?style=for-the-badge)
+![GitHub last commit](https://img.shields.io/github/last-commit/jontsm0/tria?style=for-the-badge)
+![License: MIT](https://img.shields.io/badge/license-MIT-black?style=for-the-badge)
 
-Um timer gratuito para dar espaço ao que importa agora. Escolha um tempo, selecione o contexto e cuide de apenas três tarefas.
+> **três tarefas. um tempo.**
+>
+> Um timer minimalista para foco real, feito com HTML, CSS e JavaScript nativos.
 
-## O produto
+## 🚀 Acesse agora
 
-- Timer com iniciar, pausar, continuar e reiniciar.
-- Sessões de 25, 45 ou 60 minutos; duração personalizada de 1 a 180 minutos.
-- Tags selecionáveis, com criação de até 12 tags por sessão.
-- Exatamente três espaços para tarefas: editar, concluir e apagar.
-- Interface monocromática fluida com vidro fosco, campos com destaque de edição e áreas de toque de 44 px.
-- Tema automático que acompanha o sistema, com opções claro e escuro salvas no dispositivo.
-- Ruído marrom contínuo e suave, iniciado por toque, com volume e transições graduais.
-- Controles com rótulos acessíveis e navegação por teclado.
-- Sem cadastro, anúncios, rastreamento ou dependências externas.
+**App online:** https://jontsm0.github.io/tria/
 
-## Uso
+[![Abrir tria](https://img.shields.io/badge/Abrir%20app-tria-black?style=for-the-badge)](https://jontsm0.github.io/tria/)
 
-Abra o site, escolha a duração e preencha até três tarefas. Selecione uma tag e pressione **Iniciar**. O contador acompanha o relógio ao retornar de uma aba em segundo plano. Se o navegador suspender a página, a indicação de conclusão será atualizada quando ela voltar a executar.
+## ✨ Features
 
-Esta versão mantém tarefas e tags somente na sessão da página. Recarregar ou fechar apaga o conteúdo. Não há sincronização entre dispositivos nem aviso sonoro de conclusão. O som ambiente é independente do timer e começa desligado a cada abertura. Tema e volume ficam salvos localmente quando o navegador permite.
+- ✅ **3 tarefas fixas** para reduzir overload e manter clareza.
+- ⏱️ **Sessões rápidas** de 25/45/60 min + tempo customizado (1–180 min).
+- 🏷️ **Tags de contexto** para direcionar o foco da sessão.
+- 🎧 **Ruído marrom** com controle de volume.
+- 🌗 **Modo claro/escuro** (auto, claro e escuro).
+- 📱 **Responsivo e acessível** com navegação por teclado.
+- 🔌 **Sem dependências e offline após carregar**.
 
-## Desenvolvimento
+## 📊 Snapshot do produto
 
-HTML, CSS e JavaScript nativos. Nenhuma instalação ou etapa de compilação.
+- **Stack:** Vanilla JavaScript + HTML + CSS
+- **Dependências:** 0
+- **Modelo:** 100% client-side
 
-Com Python 3 instalado, execute na raiz do projeto:
+## 🧠 Como usar
+
+1. Escolha a duração.
+2. Defina até 3 tarefas.
+3. Selecione uma tag.
+4. Pressione **Iniciar** e foque.
+
+## 🛠️ Rodando localmente
 
 ```sh
 python3 -m http.server 8000
 ```
 
-Abra `http://localhost:8000`.
+Abra: `http://localhost:8000`
 
-## Estrutura
+## 🌐 GitHub Pages (setup completo)
 
-- `index.html`: interface e metadados.
-- `style.css`: identidade visual e responsividade.
-- `app.js`: timer, tags e tarefas.
-- `theme.js`: aparência automática e preferência local.
-- `ambient.js` e `brown-noise.js`: controles e geração do áudio via AudioWorklet (HTTPS ou localhost).
-- `icon.svg`: símbolo da marca.
-- `BRAND.md`: posicionamento e textos de divulgação.
+Status validado no repositório:
+- ✅ `index.html` está na raiz
+- ✅ `.nojekyll` está presente
+- ✅ Assets usam caminhos relativos
 
-## Publicação
+Para ativar no GitHub:
+1. Abra **Settings** do repositório `jontsm0/tria`
+2. Vá para **Pages**
+3. Em **Build and deployment**, selecione:
+   - **Source:** `Deploy from a branch`
+   - **Branch:** `main`
+   - **Folder:** `/ (root)`
+4. Salve e aguarde o deploy
+5. URL esperada: **https://jontsm0.github.io/tria/**
 
-Os arquivos estão na raiz do repositório e usam caminhos relativos compatíveis com GitHub Pages em `/tria/`. A configuração e ativação da hospedagem será feita separadamente pelo proprietário. O arquivo `.nojekyll` permite servir os arquivos estáticos diretamente.
+## 🧾 Identidade sugerida no GitHub
 
-## Identidade no GitHub
+- **Descrição do repositório:**  
+  `Três tarefas. Um tempo. Timer minimalista gratuito com tags e foco no essencial.`
+- **Topics:**  
+  `focus`, `timer`, `productivity`, `minimal`, `vanilla-javascript`, `responsive`
 
-Repositório: [jontsm0/tria](https://github.com/jontsm0/tria).
+## 🔗 Links
 
-Descrição: “Três tarefas. Um tempo. Timer minimalista gratuito com tags e foco no essencial.”
-
-Tópicos: `focus`, `timer`, `productivity`, `minimal`, `vanilla-javascript`, `responsive`.
-
-O nome é uma proposta criativa; disponibilidade de marca e domínio não foi verificada. O projeto ainda não define uma licença de redistribuição; uso gratuito do site não significa automaticamente código aberto.
-
-## Decisões de interface e referências
-
-Tipografia nativa do sistema (`system-ui`), campos em `1rem` (16 px na configuração padrão), rótulos regulares em `0.875rem` e números do timer com escala fluida e algarismos tabulares. Esses tamanhos são escolhas de design, não mínimos impostos pelas WCAG.
-
-- [W3C — ampliação de texto até 200%](https://www.w3.org/WAI/WCAG22/Understanding/resize-text.html).
-- [W3C — reflow e largura de 320 CSS px](https://www.w3.org/WAI/WCAG21/Understanding/reflow.html).
-- [Radix UI — componentes e acessibilidade](https://www.radix-ui.com/primitives/docs/overview/accessibility): avaliado; não adotado porque o projeto é estático e os controles usados têm equivalentes HTML nativos.
-- [MDN — backdrop-filter](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/backdrop-filter): blur no fundo do painel, sem desfocar conteúdo; fallback opaco e preferência por transparência reduzida.
-- [MDN — prefers-color-scheme](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@media/prefers-color-scheme).
-- [MDN — AudioWorklet](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API/Using_AudioWorklet): integração de ruído aleatório contínuo, filtragem de graves extremos e agudos e ganho gradual; sem arquivos de áudio externos.
-
-O áudio é uma opção de ambientação, sem promessa de efeito cognitivo. A reprodução pode ser interrompida pelo sistema ao bloquear a tela ou trocar de aplicativo. Não houve validação visual nem teste auditivo em aparelhos físicos nesta revisão.
+- Repositório: https://github.com/jontsm0/tria
+- Licença: [MIT](./LICENSE)
+- Autor (@jontsm0): https://github.com/jontsm0
