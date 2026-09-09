@@ -5,7 +5,8 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/jontsm0/tria?style=for-the-badge)
 ![License: MIT](https://img.shields.io/badge/license-MIT-black?style=for-the-badge)
 
-> **três tarefas. um tempo.**  
+> **três tarefas. um tempo.**
+>
 > Um timer minimalista para foco real, feito com HTML, CSS e JavaScript nativos.
 
 ## 🚀 Acesse agora
